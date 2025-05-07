@@ -11,5 +11,5 @@ setup(
    license="MIT",
    author='automatic-ripping-machine contributors',
    packages=['automatic-ripping-machine'],  #same as name
-   install_requires=required, #external packages as dependencies
+   install_requires=required[1:], #external packages as dependencies
 )
