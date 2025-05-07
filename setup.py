@@ -2,7 +2,8 @@ import os
 from setuptools import setup
 
 with open('requirements.txt') as f:
-    required = f.read().splitlines()
+    with open('requirements.txt') as f2:
+        required = f.read().splitlines() + f2.read().splitlines()
 
 setup(
    name='automatic-ripping-machine',
